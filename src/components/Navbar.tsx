@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const links = [
-  { label: "Menu", href: "#menu" },
+  { label: "Menu", href: "/menu", isRoute: true },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
