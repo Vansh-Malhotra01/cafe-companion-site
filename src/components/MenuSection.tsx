@@ -65,9 +65,15 @@ const MenuSection = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-center text-muted-foreground mt-12 text-sm"
+          className="text-center mt-12 space-y-4"
         >
-          ₹300 for two (approx.) · Sandwich · Burger · Chinese · Street Food · Pizza · North Indian
+          <p className="text-muted-foreground text-sm">₹300 for two (approx.) · Sandwich · Burger · Chinese · Street Food · Pizza · North Indian</p>
+          <Link
+            to="/menu"
+            className="inline-block bg-primary text-primary-foreground text-sm font-semibold px-8 py-3 rounded-full hover:opacity-90 transition-opacity"
+          >
+            View Full Menu
+          </Link>
         </motion.p>
       </div>
     </section>
