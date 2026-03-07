@@ -71,16 +71,17 @@ const Navbar = () => {
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden bg-background border-b border-border px-6 pb-6 space-y-4"
         >
-          {links.map((l) => (
-            <a
-              key={l.label}
-              href={l.href}
-              onClick={() => setOpen(false)}
-              className="block text-secondary-foreground hover:text-primary transition-colors"
-            >
-              {l.label}
-            </a>
-          ))}
+          {links.map((l) =>
+            l.isRoute ? (
+              <Link key={l.label} to={l.href} onClick={() => setOpen(false)} className="block text-secondary-foreground hover:text-primary transition-colors">
+                {l.label}
+              </Link>
+            ) : (
+              <a key={l.label} href={l.href} onClick={() => setOpen(false)} className="block text-secondary-foreground hover:text-primary transition-colors">
+                {l.label}
+              </a>
+            )
+          )}
           <a
             href="tel:+919555527775"
             className="block bg-primary text-primary-foreground text-sm font-semibold px-5 py-2 rounded-full text-center"
