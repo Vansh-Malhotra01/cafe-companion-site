@@ -67,7 +67,7 @@ const MenuSection = () => {
           viewport={{ once: true }}
           className="text-center mt-12 space-y-4"
         >
-          <p className="text-muted-foreground text-sm">₹300 for two (approx.) · Sandwich · Burger · Chinese · Street Food · Pizza · North Indian</p>
+          <p className="text-muted-foreground text-sm">₹500 for two (approx.) · Sandwich · Burger · Chinese · Street Food · Pizza · North Indian</p>
           <Link
             to="/menu"
             className="inline-block bg-primary text-primary-foreground text-sm font-semibold px-8 py-3 rounded-full hover:opacity-90 transition-opacity"
