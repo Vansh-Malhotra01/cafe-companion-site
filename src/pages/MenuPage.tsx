@@ -571,6 +571,7 @@ const MenuPage = () => {
           </Link>
         </div>
       </div>
+      <WhatsAppButton />
     </div>
   );
 };
