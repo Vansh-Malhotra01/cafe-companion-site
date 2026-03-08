@@ -10,6 +10,7 @@ import gallery6 from "@/assets/gallery-6.jpg";
 import gallery7 from "@/assets/gallery-7.jpg";
 import gallery8 from "@/assets/gallery-8.jpg";
 import gallery9 from "@/assets/gallery-9.jpg";
+import gallery10 from "@/assets/gallery-10.jpg";
 
 const images = [
   { src: gallery1, alt: "Cozy interior with fairy lights", caption: "The Ambiance" },
@@ -21,6 +22,7 @@ const images = [
   { src: gallery7, alt: "Safe Sky Kitchen highlights", caption: "Always Fresh" },
   { src: gallery8, alt: "Safe Sky Kitchen experience", caption: "Come Hungry, Leave Happy" },
   { src: gallery9, alt: "Safe Sky Kitchen moments", caption: "Every Bite Counts" },
+  { src: gallery10, alt: "Safe Sky Kitchen delights", caption: "A Taste To Remember" },
 ];
 
 const GallerySection = () => {
