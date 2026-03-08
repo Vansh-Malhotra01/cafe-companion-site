@@ -474,20 +474,26 @@ const MenuPage = () => {
         </div>
       </div>
 
-      {/* Quick nav */}
+      {/* Quick nav dropdown */}
       <div className="sticky top-0 z-40 bg-background/90 backdrop-blur-md border-b border-border">
-        <div className="container mx-auto px-6 py-3 overflow-x-auto">
-          <div className="flex gap-2 min-w-max">
+        <div className="container mx-auto px-6 py-3">
+          <select
+            onChange={(e) => {
+              if (e.target.value) {
+                document.getElementById(e.target.value)?.scrollIntoView({ behavior: "smooth" });
+                e.target.value = "";
+              }
+            }}
+            defaultValue=""
+            className="w-full md:w-72 bg-card text-foreground border border-border rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-primary/60 transition-colors"
+          >
+            <option value="" disabled>Jump to category…</option>
             {filteredMenu.map((cat) => (
-              <a
-                key={cat.name}
-                href={`#${cat.name.replace(/\s+/g, "-").toLowerCase()}`}
-                className="text-xs font-medium text-muted-foreground hover:text-primary px-3 py-1.5 rounded-full border border-border hover:border-primary/40 transition-colors whitespace-nowrap"
-              >
-                {cat.emoji} {cat.name}
-              </a>
+              <option key={cat.name} value={cat.name.replace(/\s+/g, "-").toLowerCase()}>
+                {cat.emoji} {cat.name} ({cat.items.length})
+              </option>
             ))}
-          </div>
+          </select>
         </div>
       </div>
 
