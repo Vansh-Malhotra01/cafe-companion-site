@@ -49,16 +49,23 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="mt-14 rounded-xl overflow-hidden border border-border glow-shadow"
         >
-          <iframe
-            title="Safe Sky Kitchen Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.5!2d77.1157!3d28.6456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM4JzQ0LjIiTiA3N8KwMDYnNTYuNSJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin&q=Safe+Sky+Kitchen+Bali+Nagar+Rajouri+Garden+New+Delhi"
-            width="100%"
-            height="350"
-            style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) brightness(0.95) contrast(0.9)" }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
+          <a
+            href="https://www.google.com/maps/search/Safe+Sky+Kitchen+Bali+Nagar+Rajouri+Garden+New+Delhi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <iframe
+              title="Safe Sky Kitchen Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.5!2d77.1157!3d28.6456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM4JzQ0LjIiTiA3N8KwMDYnNTYuNSJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin&q=Safe+Sky+Kitchen+Bali+Nagar+Rajouri+Garden+New+Delhi"
+              width="100%"
+              height="350"
+              style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) brightness(0.95) contrast(0.9)", pointerEvents: "none" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </a>
         </motion.div>
 
         <motion.div
