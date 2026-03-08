@@ -2,7 +2,7 @@ import { MessageCircle } from "lucide-react";
 
 const PHONE = "919555527775";
 const MESSAGE = encodeURIComponent(
-  "Hi Safe Sky Kitchen! 🍽️\nI'd like to place an order. Here's what I want:\n\n1. \n2. \n3. \n\nPlease confirm availability and total. Thank you!"
+  "Hi, I want to place an order from Safe Sky Kitchen.\n\nName:\nItems:\nQuantity:\nDelivery Address:\nPreferred Time:\nPayment Mode (Cash/UPI):\n\nPlease confirm my order. Thank you!"
 );
 
 const WhatsAppButton = () => (
