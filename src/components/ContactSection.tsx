@@ -75,7 +75,7 @@ const ContactSection = () => {
             Order on Zomato <ExternalLink className="w-4 h-4" />
           </a>
           <a
-            href="https://www.swiggy.com"
+            href="https://www.swiggy.com/city/delhi/safe-sky-kitchen-ramesh-nagar-rajouri-garden-rest311093"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-card text-foreground border border-border px-8 py-3 rounded-full font-semibold text-sm hover:border-primary/40 transition-colors"
