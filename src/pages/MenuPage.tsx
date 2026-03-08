@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 type MenuItem = { name: string; price: string; veg?: boolean; egg?: boolean };
 type Category = { name: string; emoji: string; items: MenuItem[] };
@@ -570,6 +571,7 @@ const MenuPage = () => {
           </Link>
         </div>
       </div>
+      <WhatsAppButton />
     </div>
   );
 };
