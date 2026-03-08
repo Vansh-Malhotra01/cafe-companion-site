@@ -487,7 +487,7 @@ const MenuPage = () => {
             defaultValue=""
             className="w-full md:w-72 bg-card text-foreground border border-border rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-primary/60 transition-colors"
           >
-            <option value="" disabled>Jump to category…</option>
+            <option value="" disabled>Search by category…</option>
             {filteredMenu.map((cat) => (
               <option key={cat.name} value={cat.name.replace(/\s+/g, "-").toLowerCase()}>
                 {cat.emoji} {cat.name} ({cat.items.length})
