@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
@@ -88,10 +88,24 @@ const GallerySection = () => {
           >
             <button
               onClick={() => setSelected(null)}
-              className="absolute top-6 right-6 text-foreground hover:text-primary transition-colors"
+              className="absolute top-6 right-6 text-foreground hover:text-primary transition-colors z-10"
               aria-label="Close"
             >
               <X className="w-7 h-7" />
+            </button>
+            <button
+              onClick={(e) => { e.stopPropagation(); setSelected((selected - 1 + images.length) % images.length); }}
+              className="absolute left-4 md:left-8 text-foreground hover:text-primary transition-colors z-10 bg-card/50 rounded-full p-2"
+              aria-label="Previous"
+            >
+              <ChevronLeft className="w-8 h-8" />
+            </button>
+            <button
+              onClick={(e) => { e.stopPropagation(); setSelected((selected + 1) % images.length); }}
+              className="absolute right-4 md:right-8 text-foreground hover:text-primary transition-colors z-10 bg-card/50 rounded-full p-2"
+              aria-label="Next"
+            >
+              <ChevronRight className="w-8 h-8" />
             </button>
             <motion.img
               key={selected}
@@ -103,6 +117,9 @@ const GallerySection = () => {
               className="max-w-full max-h-[85vh] rounded-xl object-contain"
               onClick={(e) => e.stopPropagation()}
             />
+            <p className="absolute bottom-6 text-foreground font-display font-semibold text-sm bg-card/50 px-4 py-2 rounded-full">
+              {images[selected].caption} · {selected + 1}/{images.length}
+            </p>
           </motion.div>
         )}
       </AnimatePresence>
