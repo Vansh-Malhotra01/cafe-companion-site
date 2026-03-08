@@ -30,7 +30,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between h-16">
         <Link to="/" className="font-display text-xl font-bold text-foreground">
-          Safe Sky Kitchen<span className="text-primary">.</span>
+          Safe Sky Kitchen
         </Link>
 
         {/* Desktop */}
