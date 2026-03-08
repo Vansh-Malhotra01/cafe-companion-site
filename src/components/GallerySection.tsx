@@ -10,7 +10,7 @@ import gallery6 from "@/assets/gallery-6.jpg";
 
 const images = [
   { src: gallery1, alt: "Cozy interior with fairy lights", caption: "The Ambiance" },
-  { src: gallery2, alt: "Barista crafting coffee", caption: "Freshly Brewed" },
+  { src: gallery2, alt: "Restaurant interior", caption: "The Vibe" },
   { src: gallery3, alt: "Indian street food platter", caption: "Street Food Platter" },
   { src: gallery4, alt: "Friends enjoying dinner", caption: "Good Times" },
   { src: gallery5, alt: "Colorful cold beverages", caption: "Refreshing Drinks" },
