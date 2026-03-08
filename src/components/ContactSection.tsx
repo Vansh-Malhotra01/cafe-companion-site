@@ -30,13 +30,14 @@ const ContactSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="text-center p-6"
+              className={`text-center p-6 ${item.href ? "cursor-pointer" : ""}`}
+              onClick={() => item.href && window.open(item.href, "_blank")}
             >
               <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <item.icon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-display text-lg font-semibold text-foreground mb-2">{item.label}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{item.value}</p>
+              <p className={`text-muted-foreground text-sm leading-relaxed ${item.href ? "hover:text-primary transition-colors" : ""}`}>{item.value}</p>
             </motion.div>
           ))}
         </div>
