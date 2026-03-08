@@ -20,8 +20,8 @@ const ContactSection = () => {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {[
-            { icon: MapPin, label: "Address", value: "E-1, 367, Main Road, Block E, Bali Nagar, Rajouri Garden, New Delhi — 110015" },
-            { icon: Phone, label: "Call Us", value: "+91 95555 27775" },
+            { icon: MapPin, label: "Address", value: "E-1, 367, Main Road, Block E, Bali Nagar, Rajouri Garden, New Delhi — 110015", href: "https://www.google.com/maps/search/Safe+Sky+Kitchen+Bali+Nagar+Rajouri+Garden+New+Delhi" },
+            { icon: Phone, label: "Call Us", value: "+91 95555 27775", href: "tel:+919555527775" },
             { icon: Clock, label: "Hours", value: "11 AM – 3 AM · Open Every Day" },
           ].map((item, i) => (
             <motion.div
@@ -30,13 +30,14 @@ const ContactSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="text-center p-6"
+              className={`text-center p-6 ${item.href ? "cursor-pointer" : ""}`}
+              onClick={() => item.href && window.open(item.href, "_blank")}
             >
               <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <item.icon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-display text-lg font-semibold text-foreground mb-2">{item.label}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{item.value}</p>
+              <p className={`text-muted-foreground text-sm leading-relaxed ${item.href ? "hover:text-primary transition-colors" : ""}`}>{item.value}</p>
             </motion.div>
           ))}
         </div>
