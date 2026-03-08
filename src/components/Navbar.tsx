@@ -5,6 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const links = [
+  { label: "Book a Table", href: "#reservation" },
   { label: "Menu", href: "/menu", isRoute: true },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
