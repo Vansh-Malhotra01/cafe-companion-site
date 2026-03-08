@@ -14,7 +14,7 @@ const images = [
   { src: gallery3, alt: "Delicious food at Safe Sky Kitchen", caption: "Taste The Magic" },
   { src: gallery4, alt: "Cozy dining experience", caption: "Flavors That Connect" },
   { src: gallery5, alt: "Colorful cold beverages", caption: "Refreshing Drinks" },
-  { src: gallery6, alt: "Outdoor seating at night", caption: "Open-Air Vibes" },
+  { src: gallery6, alt: "Safe Sky Kitchen dining area", caption: "Where Memories Are Made" },
 ];
 
 const GallerySection = () => {
