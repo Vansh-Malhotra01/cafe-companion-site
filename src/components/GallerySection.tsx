@@ -13,7 +13,7 @@ const images = [
   { src: gallery2, alt: "Restaurant interior", caption: "The Vibe" },
   { src: gallery3, alt: "Delicious food at Safe Sky Kitchen", caption: "Taste The Magic" },
   { src: gallery4, alt: "Cozy dining experience", caption: "Flavors That Connect" },
-  { src: gallery5, alt: "Colorful cold beverages", caption: "Refreshing Drinks" },
+  { src: gallery5, alt: "Safe Sky Kitchen food spread", caption: "Feast Mode On" },
   { src: gallery6, alt: "Safe Sky Kitchen dining area", caption: "Where Memories Are Made" },
 ];
 
