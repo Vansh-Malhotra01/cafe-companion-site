@@ -20,8 +20,8 @@ const ContactSection = () => {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {[
-            { icon: MapPin, label: "Address", value: "E-1, 367, Main Road, Block E, Bali Nagar, Rajouri Garden, New Delhi — 110015" },
-            { icon: Phone, label: "Call Us", value: "+91 95555 27775" },
+            { icon: MapPin, label: "Address", value: "E-1, 367, Main Road, Block E, Bali Nagar, Rajouri Garden, New Delhi — 110015", href: "https://www.google.com/maps/search/Safe+Sky+Kitchen+Bali+Nagar+Rajouri+Garden+New+Delhi" },
+            { icon: Phone, label: "Call Us", value: "+91 95555 27775", href: "tel:+919555527775" },
             { icon: Clock, label: "Hours", value: "11 AM – 3 AM · Open Every Day" },
           ].map((item, i) => (
             <motion.div
