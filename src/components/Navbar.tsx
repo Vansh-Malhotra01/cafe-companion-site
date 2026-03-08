@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const links = [
   { label: "Menu", href: "/menu", isRoute: true },
@@ -29,8 +30,9 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between h-16">
-        <Link to="/" className="font-display text-xl font-bold text-foreground">
-          Safe Sky Kitchen
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="Safe Sky Kitchen" className="h-10 w-10 rounded-full object-cover" />
+          <span className="font-display text-xl font-bold text-foreground">Safe Sky Kitchen</span>
         </Link>
 
         {/* Desktop */}
