@@ -6,10 +6,10 @@ import dish3 from "@/assets/dish-3.jpg";
 import dish4 from "@/assets/dish-4.jpg";
 
 const dishes = [
-  { name: "Butter Chicken", desc: "Creamy tomato curry with tender chicken", price: "₹220", image: dish1, tag: "Bestseller" },
-  { name: "Double Smash Burger", desc: "Juicy patties with melted cheese & fries", price: "₹180", image: dish2, tag: "Popular" },
-  { name: "Mushroom Wrap Rolls", desc: "Roasted mushroom filling in crispy wraps", price: "₹150", image: dish3, tag: "Must Try" },
-  { name: "Wood-Fired Pizza", desc: "Hand-tossed with fresh toppings", price: "₹250", image: dish4, tag: "New" },
+  { name: "Chicken Tikka Masala", desc: "Rich tikka pieces in creamy masala gravy", price: "₹495", image: dish1, tag: "Bestseller" },
+  { name: "Double Smash Burger", desc: "Juicy patties with melted cheese & fries", price: "₹315", image: dish2, tag: "Popular" },
+  { name: "Roasted Mushroom Wrap", desc: "Roasted mushroom filling in crispy wraps", price: "₹340", image: dish3, tag: "Must Try" },
+  { name: "Chicken Tikka Pizza", desc: "Tandoori chicken with peppers & onions", price: "₹530", image: dish4, tag: "New" },
 ];
 
 const MenuSection = () => {
