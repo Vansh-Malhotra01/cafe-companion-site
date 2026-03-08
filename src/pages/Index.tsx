@@ -5,6 +5,7 @@ import MenuSection from "@/components/MenuSection";
 import AboutSection from "@/components/AboutSection";
 import GallerySection from "@/components/GallerySection";
 import ContactSection from "@/components/ContactSection";
+import ReservationSection from "@/components/ReservationSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import PromoPopup from "@/components/PromoPopup";
@@ -18,6 +19,7 @@ const Index = () => {
       <MarqueeBanner />
       <AboutSection />
       <GallerySection />
+      <ReservationSection />
       <ContactSection />
       <Footer />
       <WhatsAppButton />
