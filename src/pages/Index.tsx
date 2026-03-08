@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import MarqueeBanner from "@/components/MarqueeBanner";
 import HeroSection from "@/components/HeroSection";
 import MenuSection from "@/components/MenuSection";
 import AboutSection from "@/components/AboutSection";
@@ -10,6 +11,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <MarqueeBanner />
       <Navbar />
       <HeroSection />
       <MenuSection />
