@@ -12,7 +12,7 @@ const images = [
   { src: gallery1, alt: "Cozy interior with fairy lights", caption: "The Ambiance" },
   { src: gallery2, alt: "Restaurant interior", caption: "The Vibe" },
   { src: gallery3, alt: "Delicious food at Safe Sky Kitchen", caption: "Taste The Magic" },
-  { src: gallery4, alt: "Friends enjoying dinner", caption: "Good Times" },
+  { src: gallery4, alt: "Cozy dining experience", caption: "Flavors That Connect" },
   { src: gallery5, alt: "Colorful cold beverages", caption: "Refreshing Drinks" },
   { src: gallery6, alt: "Outdoor seating at night", caption: "Open-Air Vibes" },
 ];
