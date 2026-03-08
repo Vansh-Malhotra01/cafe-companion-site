@@ -11,9 +11,9 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <MarqueeBanner />
       <Navbar />
       <HeroSection />
+      <MarqueeBanner />
       <MenuSection />
       <AboutSection />
       <GallerySection />
